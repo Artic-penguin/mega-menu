@@ -1,0 +1,128 @@
+/* Basic Navigation Styles */
+
+body {
+    background-color: #f1f1eb;
+}
+
+.second-navbar a {
+    color: rgba(255, 255, 255, 1);
+    width: 215px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+}
+
+.second-navbar .animation {
+    position: absolute;
+    height: 5px;
+    z-index: 0;
+    width: 215px;
+    background-color: #00928b;
+    transition: all 5s ease 10;
+    bottom: 0px;
+}
+
+/* Link Follow */
+.link-1:hover, .link-1:active {color: #00928b;}
+.link-1:hover ~ .animation {left: 0px;}
+.link-2:hover, .link-2:active {color: #00928b;}
+a.link-2:hover ~ .animation {left: 215px;}
+.link-3:hover, .link-3:active {color: #00928b;}
+a.link-3:hover ~ .animation{left: 430px;}
+.link-4:hover, .link-4:active {color: #00928b;}
+a.link-4:hover ~ .animation {left: 645px;}
+a.current-page, a.current-page:active, a.current-page:hover {color: #00928b;}
+
+.start-consumer {
+    left: 0px;
+}
+
+.start-business {
+    left: 215px;
+}
+
+.start-carrier {
+    left: 430px;
+}
+
+.start-group {
+    left: 645px;
+}
+
+/* Second NavBar */
+
+.menu-text, .menu-text:focus{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+a.menu-text:hover, .menu-text:active {
+    color: #21cfb3;
+}
+
+.company-brand {
+    padding: 0px;
+}
+
+/* Menu Content */ 
+.side-image {
+    width: 350px;
+    height: 350px;
+    background-color: slategray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.font-weight-bold {
+    color: #21cfb3;
+}
+
+/* Side-Images Content */
+.img-1 {
+    background-image: url("https://www.etisalat.ae/en/images/m-menu-new-freedom-en-377x325_tcm313-232301.jpg");
+}
+
+.img-2 {
+    background-image: url("https://www.etisalat.ae/en/images/mega-menu-elife-kick-desk_tcm313-229739.jpg");
+}
+
+.img-3 {
+    background-image: url("https://www.etisalat.ae/ar/system/images/galaxy-s21-ultra-ar-377x325_tcm314-210509.jpg");
+}
+
+.img-4 {
+    background-image: url("https://www.etisalat.ae/en/images/DoubleMinutes264-EN_tcm313-218916.jpg");
+}
+
+.img-5 {
+    background-image: url("https://www.etisalat.ae/en/images/One%20Month%20FREE%20Internet%20Offer%20264x277_tcm313-212310.jpg");
+}
+
+
+
+/* Backgroun Image */
+
+#background-image {
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+
+#background-image::before {
+    border-radius: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    content: "";
+    background-size: cover;
+    position: absolute;
+    right: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.etisalat.ae/en/images/UpgradePlan_en_SMB_XL_Desktop_tcm313-217968.jpg");
+}
